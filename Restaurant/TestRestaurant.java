@@ -61,6 +61,30 @@ public class TestRestaurant {
             System.out.println("Prix commande : " + carte1.calculerPrixCommande(commande) + "€");
             System.out.println("##Question 9");
             carte1.afficherRecapitulatifCommande(commande);
+
+            //V2
+            System.out.println("##Question 10");
+            Entree saladeVerte2 = new Entree("Salade verte", 4, 100, 200);
+            Entree saladeComposee2 = new Entree("Salade Composée", 6, 150, 350);
+            PlatPrincipal pizzaReine2 = new PlatPrincipal("Pizza Reine", 9, 400, 500);
+            PlatPrincipal pizzaMargarita2 = new PlatPrincipal("Pizza Margarita", 8, 600, 200);
+            PlatPrincipal spaghetti2 = new PlatPrincipal("Spaghetti à la Bolognaise", 25, 700, 440);
+            Dessert tiramisu2 = new Dessert("Tiramisu", 4, 390, 105);
+            Boisson eau2 = new Boisson("Eau Gratuite", 0, 50, 5, 1.8f);
+            Menu menu2 = new Menu(15, saladeVerte2, pizzaReine2, tiramisu2, eau2);
+            Carte carte2 = new Carte();
+            carte2.addEntree(saladeVerte2);
+            carte2.addEntree(saladeComposee2);
+            carte2.addPlatPrincipal(pizzaReine2);
+            carte2.addPlatPrincipal(pizzaMargarita2);
+            carte2.addPlatPrincipal(spaghetti2);
+            carte2.addDessert(tiramisu2);
+            carte2.addBoisson(eau2);
+            carte2.addMenu(menu2);
+            System.out.println("Nouvelle carte (avec kcal et glucides) ajoutée");
+            System.out.println("##Question 11");
+            carte2.proposerMenu(1000, 500);
+
         } catch (Exception e) {
             System.out.println("##Question 5");
             System.out.println(e.getMessage());

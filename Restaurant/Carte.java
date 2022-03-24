@@ -154,4 +154,18 @@ public class Carte {
         System.out.println("Liste des desserts:" + desserts);
         System.out.println("Liste des boissons:" + boissons);
     }
+
+    public void proposerMenu(int Kc, int epsilon) {
+        ArrayList<Menu> menus = new ArrayList<Menu>();
+        String message;
+        int kcal = 0;
+        float glucides = 0;
+        for (Menu menu : this.menus) {
+           // for (Nutrition consommable : (ArrayList<Nutrition>) menu.getItems()) {
+
+            //}
+        }
+        message="Les menus ayant " +KC+"±"epsilon+" kcal sont :" +menus;
+        System.out.println(message);
+    }
 }
