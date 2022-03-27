@@ -159,12 +159,12 @@ public class Carte {
         ArrayList<Menu> menus = new ArrayList<Menu>();
         String message;
         int kcal = 0;
-        for (Menu menu : this.menus) {
-           // for (Nutrition consommable : (ArrayList<Nutrition>) menu.getItems()) {
-            //kcal += consommable.getKcal();
-            //}
+        for (Menu menu : this.menus) {  //Il  faudrait utiliser des méthodes de Nutrition alors que j'ai une liste de Consommable, je vois pas comment faire
+            // for (Nutrition consommable : (ArrayList<Nutrition>) menu.getItems()) {
+            // kcal += consommable.getKcal();
+            // }
         }
-        message="Les menus ayant " +KC+"+"epsilon+" kcal sont :" +menus;
+        message = "Les menus ayant " + Kc + "±" + epsilon + " kcal sont :" + menus;
         System.out.println(message);
     }
 }

@@ -45,4 +45,8 @@ public class Boisson implements Consommable, Nutrition {
     public float getGlucides() {
         return glucides;
     }
+
+    public String toString() {
+        return this.getNom();
+    }
 }

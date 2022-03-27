@@ -17,10 +17,12 @@ public class TestRestaurant {
             System.out.println("##Question 4");
             System.out.println(menu.toString());
 
+            System.out.println("##Question 5");
+            System.out.println("Voir code.");
+
             Carte carte = new Carte();
             carte.addBoisson(citronade);
             carte.addBoisson(new Boisson("Citronade", 1, 1));// test de l'ajout d'un doublon
-
             System.out.println("##Question 6");
             carte.afficherCarte();
 

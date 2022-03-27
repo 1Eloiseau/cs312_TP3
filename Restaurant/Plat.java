@@ -34,4 +34,8 @@ public class Plat implements Consommable {
     public float getGlucides() {
         return glucides;
     }
+
+    public String toString() {
+        return this.getNom();
+    }
 }
