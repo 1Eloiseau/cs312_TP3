@@ -74,13 +74,13 @@ public class Carte {
         Iterator<Consommable> iterateurEntrees = this.entrees.iterator();
         Iterator<Consommable> iterateurDesserts = this.desserts.iterator();
 
-        return verifNom(nomItem, iterateurBoisson)
+        return verifNom(nomItem, iterateurBoisson) //on vérifie que l'homonyme potentiel n'est dans aucune des listes (Boisson/Plats/Entrees/Desserts)
                 && verifNom(nomItem, iterateurPlats)
                 && verifNom(nomItem, iterateurEntrees)
                 && verifNom(nomItem, iterateurDesserts);
     }
 
-    // utilisé par verifCarte, renvoit 0 si un nom de consommable est déjà dans la
+    // utilisé par verifCarte exclusivement, renvoit 0 si un nom de consommable est déjà dans la
     // liste de l'itérateur
     private boolean verifNom(String nom, Iterator<Consommable> iterateur) {
         boolean verif = true;
@@ -106,6 +106,7 @@ public class Carte {
         return verif;
     }
 
+    //Affiche tous les objets de la commande et son prix
     public void afficherRecapitulatifCommande(Commande commande) {
         String message = "Commande composée de : ";
         for (Consommable item : commande.getItemsCommandes()) {

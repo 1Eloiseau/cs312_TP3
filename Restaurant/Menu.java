@@ -35,9 +35,10 @@ public class Menu {
         return message;
     }
 
+    //vérifie que le prix du menu est inferieur au prix de ses composantes, et qu'il est non-négatif
     public boolean verifPrixMenu() {
         boolean prixIncorect = false;
-        int prixTotal = 0;
+        int prixTotal = 0; //prix des consommables cummulés
 
         for (Consommable item : items) {
             prixTotal += item.getPrix();

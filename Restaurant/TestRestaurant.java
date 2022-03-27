@@ -13,19 +13,23 @@ public class TestRestaurant {
             Dessert tarteFraises = new Dessert("Tarte aux fraises", 3);
             Boisson citronade = new Boisson("Citronade", 2, 33);
 
+            //Question 4
             Menu menu = new Menu(10, salade, risotto, tarteFraises, citronade);
             System.out.println("##Question 4");
             System.out.println(menu.toString());
 
+            //Question 5
             System.out.println("##Question 5");
             System.out.println("Voir code.");
 
+            //Question 6
             Carte carte = new Carte();
             carte.addBoisson(citronade);
             carte.addBoisson(new Boisson("Citronade", 1, 1));// test de l'ajout d'un doublon
             System.out.println("##Question 6");
             carte.afficherCarte();
 
+            //Question 7
             carte.addEntree(salade);
             carte.addPlatPrincipal(risotto);
             carte.addMenu(menu);
@@ -36,6 +40,7 @@ public class TestRestaurant {
             carte.addMenu(menu);
             System.out.println("Menus de la carte :" + carte.getMenus());
 
+            //Question 8
             Entree saladeVerte = new Entree("Salade verte", 4);
             Entree saladeComposee = new Entree("Salade Composée", 6);
             PlatPrincipal pizzaReine = new PlatPrincipal("Pizza Reine", 9);
@@ -61,10 +66,12 @@ public class TestRestaurant {
             commande.addItem(eau);
             System.out.println("##Question 8");
             System.out.println("Prix commande : " + carte1.calculerPrixCommande(commande) + "€");
+            //Question 9
             System.out.println("##Question 9");
             carte1.afficherRecapitulatifCommande(commande);
 
             //V2
+            //Question 10
             System.out.println("##Question 10");
             Entree saladeVerte2 = new Entree("Salade verte", 4, 100, 200);
             Entree saladeComposee2 = new Entree("Salade Composée", 6, 150, 350);
@@ -84,6 +91,7 @@ public class TestRestaurant {
             carte2.addBoisson(eau2);
             carte2.addMenu(menu2);
             System.out.println("Nouvelle carte (avec kcal et glucides) ajoutée");
+            //Question 11
             System.out.println("##Question 11");
             carte2.proposerMenu(1000, 500);
 

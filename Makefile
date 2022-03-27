@@ -1,5 +1,5 @@
 ## Change your name here:
-MYNAME=EloiDonval
+MYNAME = Eloi_Donval__Martin_Boulin__Loic_Savornin
 
 ## DO NOT change below
 SRC=Restaurant
